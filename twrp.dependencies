@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "aosp",
+    "repository": "platform/hardware/google/pixel",
+    "target_path": "hardware/google/pixel",
+    "revision": "android11-release"
+  },
+  {
+    "remote": "aosp",
+    "repository": "device/google/crosshatch-kernel",
+    "target_path": "device/google/crosshatch-kernel",
+    "revision": "android11-release"
+  },
+  {
+    "remote": "aosp",
+    "repository": "platform/hardware/google/interfaces",
+    "target_path": "hardware/google/interfaces",
+    "revision": "android11-release"
+  }
+]
