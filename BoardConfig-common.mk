@@ -203,8 +203,9 @@ BOARD_ROOT_EXTRA_SYMLINKS += /vendor/firmware_mnt:/firmware
 endif
 
 # CosmicDan edit: permissive selinux
+# TODO: permissive.sh should be called early when installed. We always need permissive selinux for the hotboot image though
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-#include device/google/crosshatch-sepolicy/crosshatch-sepolicy.mk
+include device/google/crosshatch-sepolicy/crosshatch-sepolicy.mk
 
 TARGET_FS_CONFIG_GEN := device/google/crosshatch/config.fs
 
