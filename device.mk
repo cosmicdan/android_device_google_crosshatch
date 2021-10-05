@@ -73,6 +73,9 @@ ifeq ($(wildcard vendor/google_devices/crosshatch/proprietary/device-vendor-cros
     BUILD_WITHOUT_VENDOR := true
 endif
 
+# Need to use a custom kernel, stock has verify flags or something
+TARGET_PREBUILT_KERNEL := device/google/crosshatch/prebuilts/Image.Kirisakura_Bluecross_R_3.1.0.lz4
+
 ifeq ($(TARGET_PREBUILT_KERNEL),)
     LOCAL_KERNEL := device/google/crosshatch-kernel/Image.lz4
 else
